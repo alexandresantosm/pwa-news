@@ -1,9 +1,12 @@
 import "./App.css";
+import { Routes } from "./routes/Routes";
 
 function App() {
   return (
     <main>
-      <section>Welcome to PWA News ;)</section>
+      <section>
+        <Routes />
+      </section>
     </main>
   );
 }
