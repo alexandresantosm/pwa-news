@@ -15,4 +15,12 @@ function getNews(subject) {
     });
 }
 
-export { getNews };
+function getNewsById(subject, id) {
+  return fetch(`${URL}/${subject}/${id}`, params)
+    .then((response) => response.json())
+    .catch((err) => {
+      console.error(`Failed retrieving information: ${err}`);
+    });
+}
+
+export { getNews, getNewsById };
