@@ -1,8 +1,8 @@
 import React, { memo } from "react";
 
-import "./styles.css";
+import "./style.css";
 
-export const Home = memo(() => {
+export const Header = memo(() => {
   return (
     <header className="header">
       <h1>The PWA News</h1>
