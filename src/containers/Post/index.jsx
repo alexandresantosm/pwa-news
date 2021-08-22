@@ -2,6 +2,7 @@ import React, { memo, useCallback, useEffect, useState } from "react";
 import { Link, useHistory, useParams } from "react-router-dom";
 import { Row, Col } from "antd";
 
+import { Actions } from "../components/Actions";
 import { Loading } from "../../components/Loading";
 import { getNews, getNewsById } from "../../resources/api";
 import { createMarkup } from "../../common/utils/createMarkup";
@@ -70,6 +71,9 @@ export const Post = memo(() => {
   ) => (
     <>
       <Link to="/">Back</Link>
+
+      <Actions post={post} subject={subject} />
+
       <Row gutter={[16, 16]}>
         <Col span={24} md={16}>
           <p>{datePublished}</p>
