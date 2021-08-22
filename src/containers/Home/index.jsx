@@ -4,6 +4,7 @@ import { Row, Col } from "antd";
 import { getNews } from "../../resources/api";
 
 import { Loading } from "../../components/Loading";
+import { Economy } from "../components/Economy";
 
 export const Home = memo(() => {
   const [news, setNews] = useState([]);
@@ -39,6 +40,7 @@ export const Home = memo(() => {
         </Col>
         <Col span={24} md={8}>
           <h2>Economy</h2>
+          <Economy values={news?.economy} />
         </Col>
       </Row>
       <hr />
