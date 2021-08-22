@@ -6,3 +6,13 @@ const params = {
 };
 
 const URL = "http://localhost:3333";
+
+function getNews(subject) {
+  return fetch(`${URL}/${subject}`, params)
+    .then((response) => response.json())
+    .catch((err) => {
+      console.error(`Failed retrieving information: ${err}`);
+    });
+}
+
+export { getNews };
