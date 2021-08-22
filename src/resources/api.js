@@ -5,7 +5,7 @@ const params = {
   },
 };
 
-const URL = "http://localhost:3333";
+const URL = "http://localhost:3333/api";
 
 function getNews(subject) {
   return fetch(`${URL}/${subject}`, params)
