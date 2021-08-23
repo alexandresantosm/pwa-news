@@ -5,7 +5,7 @@ const params = {
   },
 };
 
-const URL = "http://localhost:3333/api";
+const URL = "https://pwa-news-api.herokuapp.com/api";
 
 function getNews(subject) {
   return fetch(`${URL}/${subject}`, params)

@@ -8,7 +8,7 @@ import "./style.css";
 
 const navigatorHasShare = navigator.share;
 
-const URL = "http://localhost:3333/api";
+const URL = "https://pwa-news-api.herokuapp.com/api";
 
 export const Actions = memo(({ post, subject }) => {
   const { id, title } = post;
