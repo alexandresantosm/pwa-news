@@ -18,4 +18,4 @@ You will also see any lint errors in the console.
 
 ### Deploy on Netlify
 
-The project is deployed at the following link: [The PWA News]()
+The project is deployed at the following link: [The PWA News](https://the-pwa-news.netlify.app)
